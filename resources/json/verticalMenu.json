@@ -1,10 +1,16 @@
 {"menu": [
-    {"url":"#", "name":"Main menu", "i18n":"Main Menu", "icon":"feather icon-file-text",
-        "submenu": [
-            {"url":"submenu1", "name":"Submenu 1", "i18n":"Submenu1", "icon":"feather icon-circle"},
-            {"url":"submenu2", "name":"Submenu 2", "i18n":"Submenu2", "icon":"feather icon-circle"}
-        ]
-    },
+
   {"url":"dashboard-analytics", "name":"Dashboard", "slug":"dashboard", "badge":"2" , "badgeClass": "badge badge-warning badge-pill float-right", "icon":"feather icon-home"},
-  
+  {"url":"#", "name":"Users", "slug":"users", "badge":"" , "badgeClass": "badge badge-warning badge-pill float-right", "icon":"feather icon-users",
+      "submenu": [
+        {"url":"/users/create", "name":"Add User", "i18n":"Submenu1", "icon":"feather icon-circle"},
+        {"url":"/users", "name":"Users", "i18n":"Submenu2", "icon":"feather icon-circle"}
+    ]
+  },
+  {"url":"/positions", "name":"Positions", "slug":"positions", "badge":"" , "badgeClass": "badge badge-warning badge-pill float-right", "icon":"feather icon-users",
+      "submenu": [
+        {"url":"/positions/create", "name":"Add Postiton", "i18n":"Submenu1", "icon":"feather icon-circle"},
+        {"url":"/positions", "name":"Position", "i18n":"Submenu2", "icon":"feather icon-circle"}
+    ]}
+
 ]}

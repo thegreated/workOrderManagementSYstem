@@ -26,6 +26,7 @@ Route::get('/sk-layout-fixed', 'StaterkitController@fixed_layout');
 
 
 // Route User
-Route::get('/testPage', function () {
-    return view('users/index');
-});
+Route::resource('users', 'UserController')->except('show');
+
+// Route positions
+Route::resource('positions', 'PositionController');

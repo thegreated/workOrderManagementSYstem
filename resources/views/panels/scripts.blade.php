@@ -6,6 +6,7 @@
         <script src="{{ asset(mix('js/core/app-menu.js')) }}"></script>
         <script src="{{ asset(mix('js/core/app.js')) }}"></script>
         <script src="{{ asset(mix('js/scripts/components.js')) }}"></script>
+
 @if($configData['blankPage'] == false)
         <script src="{{ asset(mix('js/scripts/footer.js')) }}"></script>
 @endif
